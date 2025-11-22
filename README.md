@@ -13,7 +13,7 @@ Care has been taken to make it work in windowed mode, but it's mainly for fullsc
 # If you've updated to Jellyfin 10.11.x you need the latest version of Finality
 
 ```css
-@import url("https://raw.githubusercontent.com/Testycro/finality/refs/heads/main/finality-10.11.css");
+@import url("https://cdn.jsdelivr.net/gh/testycro/finality@main/finality-10.11.css");
 
 ```
 
@@ -21,7 +21,7 @@ or, import the colour version with
 
 ```css
 
-@import url("https://raw.githubusercontent.com/Testycro/finality/refs/heads/main/Finality-Coloured-10.11.css");
+@import url("https://cdn.jsdelivr.net/gh/testycro/finality@main/Finality-Coloured-10.11.css");
 
 ```
 
