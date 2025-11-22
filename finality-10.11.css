@@ -137,7 +137,8 @@ h2 {
   text-decoration: none !important;
 }
 
-p.overview.detail-clamp-text {
+.layout-desktop p.overview.detail-clamp-text,
+.layout-tv p.overview.detail-clamp-text {
   font-size: 1.1em;
   color: #fff;
   font-weight: 500;
@@ -2620,10 +2621,11 @@ a[href*="shokoanime.com"] {
   margin-top: -0.75em;
   display: -webkit-box !important;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   overflow: hidden !important;
   font-size: 1em !important;
-  max-height: 3.4em;
+  max-height: 5.6em;
+  line-height: 1.16em;
 }
 
 #childrenContent .itemsContainer.padded-right.vertical-list[is="emby-itemscontainer"] {
@@ -2857,7 +2859,7 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop #childrenContent .itemsContainer.padded-right.vertical-wrap .card.overflowPortraitCard.card-hoverable.card-withuserdata {
-  width: 18em;
+  width: 10em;
 }
 
 .layout-desktop #itemDetailPage .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX,
@@ -3157,19 +3159,19 @@ a[href*="shokoanime.com"] {
 .layout-desktop #childrenContent,
 .layout-tv #childrenContent {
   width: fit-content;
-  height: 29em;
+  height: 47em;
   overflow-y: scroll;
   border: 1px solid;
   border-color: transparent;
-  transition: border-color 0.5s, height 0.5s, background 0.5s;
-  transition-delay: 0s, 1s, 0s;
+/*  transition: border-color 0.5s, height 0.5s, background 0.5s;*/
+/*  transition-delay: 0s, 1s, 0s;*/
 }
 
 .layout-desktop #childrenContent:hover,
 .layout-tv #childrenContent:focus {
-  height: 47em;
-  background: #000;
-  border-color: #fff;
+/*  height: 47em;*/
+/*  background: rgba(0, 0, 0, 0.9);*/
+/*  border-color: #fff;*/
 }
 
 .layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection.verticalSection-extrabottompadding::before {
@@ -3188,7 +3190,7 @@ a[href*="shokoanime.com"] {
 }
 
 .layout-desktop .itemDetailPage:has(.listItem[data-type="Episode"]) #childrenContent {
-  height: 44.5em;
+  height: 47.5em;
 }
 
 .layout-desktop .itemDetailPage:has(.listItem[data-type="Episode"]) .detailRibbon {
@@ -4019,7 +4021,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #listChildrenCollapsible .itemsContainer.padded-right.vertical-wrap {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: 0em;
 }
 
@@ -4214,8 +4216,15 @@ position: fixed;
   padding-right: 0.5em;
 }
 
+.layout-mobile p.overview {
+  font-size: 0.9em;
+}
+
 .layout-mobile p.overview.detail-clamp-text {
-  font-size: 0.9em; 
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .layout-mobile .itemDetailsGroup,
