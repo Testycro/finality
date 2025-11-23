@@ -2852,7 +2852,7 @@ a[href*="shokoanime.com"] {
   grid-template-columns: repeat(8, 1fr);
   gap: 0.5rem;
   padding: 0rem;
-  width: 67vw;
+/*  width: 67vw;*/
   margin: 0;
 }
 
