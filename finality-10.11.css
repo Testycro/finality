@@ -3119,7 +3119,7 @@ a[href*="shokoanime.com"] {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
   padding: 0rem;
-  width: 81em;
+  width: 70em;
   opacity: 0;
   animation: fadeTitle 0.5s ease-out 0s forwards;
   background: #0000007d;
