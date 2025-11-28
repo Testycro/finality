@@ -1,4 +1,4 @@
-# finality 
+# finality - all credits goes to original creator [tedhinklater](https://github.com/tedhinklater)
 768p x 1080p :heavy_check_mark: 1440p :heavy_check_mark: 4k :heavy_check_mark: Mobile :soon: TV Mode :soon:
 
 Also: Turn it up to 11 with the new [Featured Content Bar](https://github.com/tedhinklater/Jellyfin-Featured-Content-Bar) 
@@ -25,12 +25,6 @@ or, import the colour version with
 
 ```
 
-<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/f3036586-2c59-413b-998b-1a40c3511616" />
-
-![season](https://github.com/user-attachments/assets/b7ecde8b-bce1-4f1c-ad4b-5bc3c6045426)
-
-![ep](https://github.com/user-attachments/assets/f42d4951-d6d1-4baa-9a1f-41e25c42f6d1)
-
 Under "Display" make sure you enable backdrops and use the Dark theme
+![Backdrops](https://i.imgur.com/18D9IO3.png)
 
-![darkbackdrops](https://github.com/user-attachments/assets/b69b1143-22c1-48df-b8e5-5aaa1869a97f)
