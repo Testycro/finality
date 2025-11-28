@@ -25,6 +25,13 @@ or, import the colour version with
 
 ```
 
+or, import the scrolling backdrop colour version with
+
+```css
+
+@import url("https://cdn.jsdelivr.net/gh/testycro/finality@main/scrolling-backdrop.css");
+
+```
 
 <img width="1679" height="1049" alt="1-0" src="https://github.com/user-attachments/assets/6bc923c0-6e7e-45e4-bf66-a19988f086af" />
 <img width="1679" height="1049" alt="1-1" src="https://github.com/user-attachments/assets/dcf8f120-3b95-4a04-b1f1-9638737f4169" />
