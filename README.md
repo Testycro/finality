@@ -25,6 +25,12 @@ or, import the colour version with
 
 ```
 
-Under "Display" make sure you enable backdrops and use the Dark theme
+
+<img width="1679" height="1049" alt="1-0" src="https://github.com/user-attachments/assets/6bc923c0-6e7e-45e4-bf66-a19988f086af" />
+<img width="1679" height="1049" alt="1-1" src="https://github.com/user-attachments/assets/dcf8f120-3b95-4a04-b1f1-9638737f4169" />
+<img width="1679" height="1049" alt="1-2" src="https://github.com/user-attachments/assets/74f5b1af-d0db-45cb-b85c-93622edf02ab" />
+
+
+# Under "Display" make sure you enable backdrops and use the Dark theme
 ![Backdrops](https://i.imgur.com/18D9IO3.png)
 
