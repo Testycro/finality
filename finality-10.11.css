@@ -926,15 +926,6 @@ progress {
   border-color: #fff !important;
 }
 
-.layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container:hover {
-  height: calc(100vh - 7em);
-  background: #000;
-  border-radius: var(--rounding);
-  z-index: 1000;
-  border: 1px solid;
-  border-color: #fff !important;
-}
-
 .layout-desktop #scenesCollapsible .sectionTitle {
   padding-top: 0;
   margin-top: 0 !important;
@@ -3613,7 +3604,7 @@ a[href*="shokoanime.com"] {
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .overview.detail-clamp-text,
 .layout-desktop .itemDetailPage:has(.itemName.infoText.subtitle) .overview.detail-clamp-text,
 .layout-tv .itemDetailPage:has(.itemName.infoText.subtitle) .overview.detail-clamp-text {
-  top: 41.5em;
+  top: 37em;
   position: fixed;
 }
 
@@ -3785,7 +3776,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard,
 .layout-tv .itemDetailPage:has(.button-link.itemAction.emby-button.show-focus[data-type="Season"]) .verticalSection.detailVerticalSection.moreFromSeasonSection .card.overflowBackdropCard {
-    width: 16vw !important;
+    width: 14vw !important;
 }
 
 .layout-desktop .itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .itemName.infoText.originalTitle,
@@ -4098,22 +4089,22 @@ a[href*="shokoanime.com"] {
 position: fixed;
   top: 7em;
   left: 40em;
-  width: 66vw;
+/*  width: 66vw;*/
   height: 29em;
   overflow-y: scroll;
-  transition: height 0.5s ease-in-out, background 0.5s ease-in-out, border-color 0.3s ease-in-out;
+/*  transition: height 0.5s ease-in-out, background 0.5s ease-in-out, border-color 0.3s ease-in-out;*/
   border: 1px solid;
   border-color: #000 !important;
-  transition-delay: 0.5s, 0s, 0s;
+/*  transition-delay: 0.5s, 0s, 0s;*/
 }
 
 .layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container:hover {
-  height: calc(100vh - 7em);
-  background: #000;
-  border-radius: var(--rounding);
-  z-index: 1000;
-  border: 1px solid;
-  border-color: #fff !important;
+/*  height: calc(100vh - 7em);*/
+/*  background: #000;*/
+/*  border-radius: var(--rounding);*/
+/*  z-index: 1000;*/
+/*  border: 1px solid;*/
+/*  border-color: #fff !important;*/
 }
 
 .layout-desktop .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container .padded-top-focusscale.padded-bottom-focusscale.no-padding.emby-scroller {
@@ -4164,7 +4155,8 @@ position: fixed;
 .layout-desktop #itemDetailPage:has(.button-link.itemAction.emby-button[data-type="Season"]) .overview {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 7;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 
