@@ -7,7 +7,7 @@ html {
 
 :root {--accent: #f00;}
 
-:root {--rounding: 0.2em;}
+:root {--rounding: 0.6em;}
 
 .backgroundContainer, .preload {
   background-color: #000d;
@@ -1049,24 +1049,22 @@ progress {
 
 /*hover zoom*/
 .layout-desktop .homeLibraryButton:hover,
+.layout-mobile .homeLibraryButton:hover,
 .layout-tv .homeLibraryButton:hover,
 .layout-desktop .homeLibraryButton:focus,
+.layout-mobile .homeLibraryButton:focus,
 .layout-tv .homeLibraryButton:focus,
-.layout-desktop .card.portraitCard:hover,
-.layout-desktop .card.backdropCard:hover,
-.layout-desktop .card.squareCard:hover {
+.layout-desktop .card:hover,
+.layout-mobile .card:hover,
+.layout-tv .card:hover,
+.layout-desktop .listItem:hover,
+.layout-mobile .listItem:hover,
+.layout-tv .listItem:hover {
   -webkit-filter: none !important;
   box-shadow: 0 0 5px 0, 255, 222;
   filter: none !important;
-  transform: scale(1.02);
-  transition: transform 1s ease;
-}
-
-.layout-tv .card:focus {
-  -webkit-filter: none !important;
-  box-shadow: 0 0 5px 0, 255, 222;
-  filter: none !important;
-  transition: transform 1s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .layout-desktop .homeLibraryButton,
@@ -1084,7 +1082,8 @@ progress {
   filter: drop-shadow(0 0 1px rgba(2, 2, 2, 0.75));
   background: #fff !important;
   color: #000 !important;
-  transform: revert;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
   font-weight: 700;
 }
 
@@ -3254,7 +3253,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop .detailPageSecondaryContainer.padded-bottom-page {
   width: 70vw;
-  margin-left: 26vw;
+  margin-left: 94vw;
 }
 
 .itemsContainer-tv > .portraitCard, .itemsContainer-tv > .squareCard {
@@ -4004,7 +4003,7 @@ a[href*="shokoanime.com"] {
 
 .layout-desktop #listChildrenCollapsible.verticalSection.detailVerticalSection {
   position: fixed;
-  top: 1.8em;
+  top: 4em;
   left: 31.3em;
   overflow: scroll;
   width: 89em;
