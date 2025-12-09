@@ -619,8 +619,8 @@ progress::-webkit-progress-value {
 .inputLabelFocused,
 .textareaLabelFocused,
 .buttonActive,
-.button-link {
-  color: #f00;
+.button-link:hover {
+  color: #f00 !important;
 }
 
 .material-icons.detailButton-icon.favorite:hover {
@@ -1047,6 +1047,25 @@ progress {
   border-radius: var(--rounding) !important;
 }
 
+@keyframes shake {
+  0%   { transform: translate(0px, 0px) rotate(0deg); }
+  20%  { transform: translate(-1px, 0px) rotate(-1deg); }
+  40%  { transform: translate(1px, 0px) rotate(1deg); }
+  60%  { transform: translate(-1px, 0px) rotate(-1deg); }
+  80%  { transform: translate(1px, 0px) rotate(1deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+@keyframes cinematicScroll {
+  0%   {background-size: 100% auto;   background-position: 0% 50%;}
+  50%  {background-size: 104.5% auto; background-position: 33% 0%;}
+  100% {background-size: 100% auto;   background-position: 100% 0%;}
+}
+
+.layout-desktop .listItemImage:hover {
+  animation: shake 0.2s ease-in-out, cinematicScroll 5s cubic-bezier(0.60, 0.2, 0.2, 0.60) infinite !important;
+}
+
 /*hover zoom*/
 .layout-desktop .homeLibraryButton:hover,
 .layout-mobile .homeLibraryButton:hover,
@@ -1065,6 +1084,7 @@ progress {
   filter: none !important;
   transform: scale(1.05);
   transition: transform 0.3s ease;
+  transform-origin: 50% 20%;
 }
 
 .layout-desktop .homeLibraryButton,
@@ -1084,6 +1104,7 @@ progress {
   color: #000 !important;
   transform: scale(1.05);
   transition: transform 0.3s ease;
+  transform-origin: 50% 20%;
   font-weight: 700;
 }
 
@@ -1819,7 +1840,7 @@ button[is="paper-icon-button-light"].cardOverlayButton.cardOverlayButton-hover.i
 @media (min-width: 60em) {
   .headerTabs.sectionTabs .tabs-viewmenubar.emby-tabs.focusable.scrollX .emby-tab-button.emby-button {
     background: #000a !important;
-    color: #fff !important;
+    color: #fff;
     border-radius: 0.25em;
     width: auto;
     transform: translateY(-23%);
